@@ -1,0 +1,19 @@
+{
+    "replace": true,
+    "order": 0,
+    "origins": [
+      "infiniburn:breezeborn",
+      "infiniburn:shulk",
+      "infiniburn:elytrian",
+      "infiniburn:arachnid",
+      "infiniburn:feline",
+      "infiniburn:construct",
+      "infiniburn:enderian",
+      "infiniburn:overgrowth",
+      "infiniburn:cryokin",
+      "infiniburn:blazeborn",
+      "infiniburn:inchling",
+      "infiniburn:goliath",
+      "infiniburn:phantom"
+    ]
+}

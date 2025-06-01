@@ -1,0 +1,10 @@
+{
+    "name": "Blazeborn",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:blaze_rod",
+    "impact": 3,
+    "order": 9,
+    "powers": [
+
+    ]
+}

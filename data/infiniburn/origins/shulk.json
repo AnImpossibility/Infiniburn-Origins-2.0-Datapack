@@ -1,0 +1,12 @@
+{
+    "name": "Shulk",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:shulker_shell",
+    "impact": 1,
+    "order": 1,
+    "powers": [
+        "*:shulk/sturdy_skin",
+        "*:shulk/slow_locomotion",
+        "*:shulk/unwieldy"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Goliath",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:anvil",
+    "impact": 3,
+    "order": 11,
+    "powers": [
+
+    ]
+}

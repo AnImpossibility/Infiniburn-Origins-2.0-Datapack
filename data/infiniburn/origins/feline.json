@@ -1,0 +1,10 @@
+{
+    "name": "Feline",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:orange_wool",
+    "impact": 1,
+    "order": 4,
+    "powers": [
+
+    ]
+}

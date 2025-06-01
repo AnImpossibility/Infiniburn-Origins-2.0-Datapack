@@ -1,0 +1,10 @@
+{
+    "name": "Overgrowth",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:vine",
+    "impact": 2,
+    "order": 9,
+    "powers": [
+
+    ]
+}

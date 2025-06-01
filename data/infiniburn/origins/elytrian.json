@@ -1,0 +1,10 @@
+{
+    "name": "Elytrian",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:elytra",
+    "impact": 1,
+    "order": 2,
+    "powers": [
+
+    ]
+}

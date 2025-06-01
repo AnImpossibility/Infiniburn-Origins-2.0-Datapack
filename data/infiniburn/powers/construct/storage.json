@@ -1,0 +1,15 @@
+{
+    "name": "Storage",
+    "description": "You have access to an additional 9 slots of inventory. You keep the items in these slots when you die.",
+    "type": "origins:inventory",
+    "title": "Storage Compartment",
+    "container_type": "dropper",
+    "drop_on_death": true,
+    "drop_on_death_filter": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:dragon_egg"
+        }
+    }
+
+}

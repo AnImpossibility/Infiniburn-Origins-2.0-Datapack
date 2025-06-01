@@ -1,0 +1,10 @@
+{
+    "name": "Phantom",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:phantom_membrane",
+    "impact": 3,
+    "order": 12,
+    "powers": [
+
+    ]
+}

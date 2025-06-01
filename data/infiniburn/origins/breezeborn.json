@@ -1,0 +1,13 @@
+{
+    "name": "Breezeborn",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": {
+        "item": "minecraft:blaze_rod",
+        "tag": "{CustomModelData: 1}"
+    },
+    "impact": 1,
+    "order": 0,
+    "powers": [
+
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Arachnid",
+    "description": "ENTER DESCRIPTION HERE!!!!!!",
+    "icon": "minecraft:cobweb",
+    "impact": 3,
+    "order": 3,
+    "powers": [
+
+    ]
+}
