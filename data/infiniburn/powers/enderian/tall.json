@@ -1,50 +1,47 @@
 {
-    "type": "origins:multiple",
     "name": "Tall",
     "description": "You are taller and can reach further.",
-    "scale": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:height 1.3"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:model_width 1.15"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:reach 1.25"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale persist set pehkui:height true @s"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale persist set pehkui:model_width true @s"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale persist set pehkui:reach true @s"
-                }
-            ]
-        },
-        "entity_action_lost": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale reset @s"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale persist reset @s"
-                }
-            ]   
-        }
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1.3"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:model_width 1.15"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:reach 1.25"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set pehkui:height true @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set pehkui:model_width true @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set pehkui:reach true @s"
+            }
+        ]
+    },
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale reset @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist reset @s"
+            }
+        ]   
     }
 }

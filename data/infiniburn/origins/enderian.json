@@ -6,6 +6,7 @@
     "order": 6,
     "powers": [
         "*:enderian/teleportation",
-        "*:enderian/tall"
+        "*:enderian/tall",
+        "*:enderian/scared_of_gourds/scared_of_gourds"
     ]
 }
