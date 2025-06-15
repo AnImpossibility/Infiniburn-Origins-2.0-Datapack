@@ -5,6 +5,8 @@ $execute store success score @s temp run spreadplayers ~ ~ 0 $(spread) under $(y
 # Reset selection if the spread fails
 execute if score @s temp matches 0 run scoreboard players set @a[tag=player_tag,limit=1] selection_completed 0
 execute if score @s temp matches 0 run return 0
+# Basic nonsolid block check
+execute as @e[tag=tester_tag,type=marker,limit=1] at @s if block ~ ~-1 ~ #infiniburn:nonsolid run tp ~ ~-1 ~
 # Setting @s temp2 to if the location is bad
 scoreboard players set @s temp2 0
 execute at @e[tag=tester_tag,type=marker,limit=1] if block ~ ~-1 ~ #infiniburn:nonsolid run scoreboard players set @s temp2 1

@@ -1,0 +1,8 @@
+{
+  "type": "origins:modify_player_spawn",
+  "name": "Nether Inhabitant",
+  "description": "You naturally spawn in the nether.",
+  "dimension": "the_nether",
+  "dimension_distance_multiplier": 1.0,
+  "spawn_strategy": "center"
+}

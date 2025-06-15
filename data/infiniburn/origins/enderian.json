@@ -3,10 +3,12 @@
     "description": "ENTER DESCRIPTION HERE!!!!!!",
     "icon": "minecraft:ender_pearl",
     "impact": 2,
-    "order": 6,
+    "order": 2,
     "powers": [
         "*:enderian/teleportation",
         "*:enderian/tall",
-        "*:enderian/scared_of_gourds/scared_of_gourds"
+        "*:enderian/scared_of_gourds/scared_of_gourds",
+        "*:enderian/hydrophobia",
+        "*:enderian/ender_particles"
     ]
 }

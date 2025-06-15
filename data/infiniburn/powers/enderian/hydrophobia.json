@@ -1,0 +1,196 @@
+{
+    "type": "origins:multiple",
+    "name": "Hydrophobia",
+    "description": "You take damage in water, similarly to lava.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "This damage can be reduced with the water protection enchantment."
+        }
+    ],
+    "potion_dmg": {
+        "type": "origins:action_on_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 2,
+            "damage_type": "infiniburn:hurt_by_water"
+        }
+    },
+    "damage_no_water-prot": {
+        "type": "origins:damage_over_time",
+        "interval": 20,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "infiniburn:hurt_by_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "origins:water_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]   
+        }
+    },
+    "damage_water-prot-1": {
+        "type": "origins:damage_over_time",
+        "interval": 25,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "infiniburn:hurt_by_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "origins:water_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 1
+                }
+            ]   
+        }
+    },
+    "damage_water-prot-2": {
+        "type": "origins:damage_over_time",
+        "interval": 30,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "infiniburn:hurt_by_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "origins:water_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 2
+                }
+            ]   
+        }
+    },
+    "damage_water-prot-3": {
+        "type": "origins:damage_over_time",
+        "interval": 35,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "infiniburn:hurt_by_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "origins:water_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 3
+                }
+            ]   
+        }
+    },
+    "damage_water-prot-4": {
+        "type": "origins:damage_over_time",
+        "interval": 40,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "infiniburn:hurt_by_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "origins:water_protection",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 4
+                }
+            ]   
+        }
+    }
+}

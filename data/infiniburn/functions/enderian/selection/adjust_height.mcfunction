@@ -17,9 +17,10 @@ execute at @s if block ~ ~ ~ minecraft:candle_cake run tp @s ~ ~0.875 ~
 execute at @s if block ~ ~ ~ minecraft:lectern run tp @s ~ ~0.875 ~
 # 0.8125 Blocks (Chrous Plant)
 execute at @s if block ~ ~ ~ chorus_plant run tp @s ~ ~0.8125 ~
-# 0.75 Blocks (Enchanting Table, Cocoa)
+# 0.75 Blocks (Enchanting Table, End Portal, Cocoa)
 execute at @s if block ~ ~ ~ minecraft:enchanting_table run tp @s ~ ~0.75 ~
 execute at @s if block ~ ~ ~ minecraft:cocoa run tp @s ~ ~0.75 ~
+execute at @s if block ~ ~ ~ minecraft:end_portal run tp @s ~ ~0.75 ~
 # 0.6875 Blocks (Hopper, Conduit)
 execute at @s if block ~ ~ ~ minecraft:hopper run tp @s ~ ~0.6875 ~
 execute at @s if block ~ ~ ~ minecraft:conduit run tp @s ~ ~0.6875 ~
@@ -30,8 +31,7 @@ execute at @s if block ~ ~ ~ minecraft:lightning_rod run tp @s ~ ~0.625 ~
 execute at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~0.5625 ~
 execute at @s if block ~ ~ ~ minecraft:lantern run tp @s ~ ~0.5625 ~
 execute at @s if block ~ ~ ~ minecraft:soul_lantern run tp @s ~ ~0.5625 ~
-# 0.5 Blocks (Slabs, Sculk)
-execute at @s if block ~ ~ ~ #minecraft:slabs run tp @s ~ ~0.5 ~
+# 0.5 Blocks (Sculk)
 execute at @s if block ~ ~ ~ minecraft:sculk_sensor run tp @s ~ ~0.5 ~
 execute at @s if block ~ ~ ~ minecraft:calibrated_sculk_sensor run tp @s ~ ~0.5 ~
 execute at @s if block ~ ~ ~ minecraft:sculk_shrieker run tp @s ~ ~0.5 ~
@@ -56,6 +56,10 @@ execute at @s if block ~ ~ ~ minecraft:lily_pad run tp @s ~ ~0.09375 ~
 execute at @s if block ~ ~ ~ #minecraft:wool_carpets run tp @s ~ ~0.0625 ~
 execute at @s if block ~ ~ ~ minecraft:moss_carpet run tp @s ~ ~0.0625 ~
 
+# Slabs
+execute at @s if block ~ ~ ~ #minecraft:slabs[type=bottom] run tp @s ~ ~0.5 ~
+execute at @s if block ~ ~ ~ #minecraft:slabs[type=top] run tp @s ~ ~1.0 ~
+execute at @s if block ~ ~ ~ #minecraft:slabs[type=double] run tp @s ~ ~1.0 ~
 # Chain
 execute at @s if block ~ ~ ~ minecraft:chain[axis=x] run tp @s ~ ~0.59375 ~
 execute at @s if block ~ ~ ~ minecraft:chain[axis=z] run tp @s ~ ~0.59375 ~

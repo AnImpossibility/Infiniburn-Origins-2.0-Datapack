@@ -11,7 +11,7 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:model_width 1.15"
+                "command": "scale set pehkui:model_width 1.125"
             },
             {
                 "type": "origins:execute_command",

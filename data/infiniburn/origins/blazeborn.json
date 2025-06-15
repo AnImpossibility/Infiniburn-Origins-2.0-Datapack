@@ -3,8 +3,12 @@
     "description": "ENTER DESCRIPTION HERE!!!!!!",
     "icon": "minecraft:blaze_rod",
     "impact": 3,
-    "order": 9,
+    "order": 0,
     "powers": [
-
+        "*:blazeborn/fire_affinity",
+        "*:blazeborn/hotblooded",
+        "*:blazeborn/hydrophobia",
+        "*:blazeborn/nether_inhabitant",
+        "*:blazeborn/flame_particles"
     ]
 }

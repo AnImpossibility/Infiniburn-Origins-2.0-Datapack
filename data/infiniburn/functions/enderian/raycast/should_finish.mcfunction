@@ -1,11 +1,10 @@
-# Normal blocks
-execute unless block ~ ~ ~ #infiniburn:nonsolid unless block ~ ~ ~ #infiniburn:variable_hitbox run scoreboard players set @s should_finish 1
-execute unless block ~ ~ ~ #infiniburn:nonsolid unless block ~ ~ ~ #infiniburn:variable_hitbox run return 0
 # Nonsolid blocks
 execute if block ~ ~ ~ #infiniburn:nonsolid run scoreboard players set @s should_finish 0
 execute if block ~ ~ ~ #infiniburn:nonsolid run return 0
+# Normal blocks
+execute unless block ~ ~ ~ #infiniburn:nonsolid unless block ~ ~ ~ #infiniburn:variable_hitbox run scoreboard players set @s should_finish 1
+execute unless block ~ ~ ~ #infiniburn:nonsolid unless block ~ ~ ~ #infiniburn:variable_hitbox run return 0
 # Setting @s temp to the relative y-value * 80
-
 summon marker ~ ~ ~ {Tags:["data_marker"]}
 execute store result score @s temp2 run data get entity @e[tag=data_marker,type=marker,limit=1] Pos[1] 1
 scoreboard players set @s temp 80

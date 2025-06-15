@@ -1,0 +1,38 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 32.0,
+        "block": false,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "none",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:origin",
+                "origin": "*:enderian",
+                "layer": "origins:origin"
+            }
+        },
+        "bientity_action": {
+            "type": "origins:invert",
+            "action": {
+                "type": "origins:add_to_set",
+                "set": "*:enderian/scared_of_gourds/scared_of_gourds_seen",
+                "time_limit": 20
+            }
+        }
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:carved_pumpkin"
+            }
+        }
+    },
+    "interval": 10
+}

@@ -1,34 +1,36 @@
 {
     "type": "origins:multiple",
     "name": "Scared of Gourds",
-    "description": "You can't sense people wearing pumpkins without directly looking at them or hearing them.",
+    "description": "You can't sense people wearing pumpkins unless eye contact is made or you hear them.",
+    "seen": {
+        "type": "origins:entity_set"
+    },
+    "glow": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:in_set",
+            "set": "*:*_seen"
+        },
+        "use_teams": false,
+        "red": 0.8,
+        "green": 0,
+        "blue": 0.4
+    },
     "hide": {
         "type": "origins:prevent_entity_render",
         "bientity_condition": {
-            "type": "origins:target_condition",
-            "condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:equipped_item",
-                        "equipment_slot": "head",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "item": "minecraft:carved_pumpkin"
-                            }
-                        }
-                    },
-                    {
-                        "type": "origins:living"
-                    },
-                    {
-                        "inverted": true,
-                        "type": "origins:power",
-                        "power": "*:enderian/scared_of_gourds/visible",
-                        "source": "apoli:command"
-                    }
-                ]   
+            "type": "origins:in_set",
+            "set": "*:*_seen",
+            "inverted": true  
+        },
+        "entity_condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:pumpkin_like/equipment"
+                }
             }
         }
     },
@@ -55,20 +57,17 @@
                 }
             },
             "bientity_action": {
-                "type": "origins:target_action",
-                "action": {
-                    "type": "origins:grant_power",
-                    "power": "*:enderian/scared_of_gourds/visible",
-                    "source": "apoli:command"
-                }
+                "type": "origins:add_to_set",
+                "set": "*:*_seen",
+                "time_limit": 5
             }
         },
-        "interval": 5
+        "interval": 1
     },
     "sense-hear": {
         "type": "origins:game_event_listener",
         "bientity_condition": {
-            "type": "origins:target_condition",
+            "type": "origins:actor_condition",
             "condition": {
                 "type": "origins:equipped_item",
                 "equipment_slot": "head",
@@ -81,11 +80,11 @@
             }
         },
         "bientity_action": {
-            "type": "origins:target_action",
+            "type": "origins:invert",
             "action": {
-                "type": "origins:grant_power",
-                "power": "*:enderian/scared_of_gourds/visible",
-                "source": "apoli:command"
+                "type": "origins:add_to_set",
+                "set": "*:*_seen",
+                "time_limit": 5
             }
         },
         "show_particle": false

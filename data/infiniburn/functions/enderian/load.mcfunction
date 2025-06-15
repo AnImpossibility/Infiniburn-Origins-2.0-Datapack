@@ -7,6 +7,7 @@ scoreboard objectives add selection_completed dummy
 scoreboard objectives add tp_ready dummy
 
 scoreboard objectives add should_finish dummy
+scoreboard objectives add tp_distance dummy
 scoreboard objectives add ray_steps dummy
 
 scoreboard objectives add enderian_focus dummy

@@ -1,0 +1,8 @@
+{
+    "entity_types": [
+        "minecraft:player"
+    ],
+    "powers": [
+        "*:enderian/scared_of_gourds/global"
+    ]
+}

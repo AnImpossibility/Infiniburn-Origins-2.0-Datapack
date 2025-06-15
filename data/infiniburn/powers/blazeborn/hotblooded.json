@@ -1,0 +1,12 @@
+{
+    "type": "origins:effect_immunity",
+    "name": "Hotblooded",
+    "description": "Your hot body burns up many good and bad potion effects you may have.",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:regeneration",
+        "minecraft:weakness",
+        "minecraft:strength"
+    ],
+  "inverted": true
+}

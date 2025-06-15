@@ -164,7 +164,7 @@
     "focus-stamina": {
         "type": "origins:resource",
         "min": 0,
-        "max": 45,
+        "max": 50,
         "start_value": 0,
         "hud_render": {
             "should_render": true,

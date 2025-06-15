@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "name": "Winged",
+    "description": "You have wings that you let you fly, and that you can flap or launch into the sky with.",
+    "wings": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "flap-cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 12,
+        "hud_render": {
+            "bar_index": 3
+        }
+    },
+    "launch-cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 900,
+        "hud_render": {
+            "bar_index": 4
+        }
+    },
+    "flap-launch": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:fall_flying"
+            },
+            "if_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "*:*_flap-cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "x": 0.0,
+                            "y": 0.5,
+                            "z": 0.1,
+                            "space": "local"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.ender_dragon.flap",
+                            "volume": 0.5,
+                            "pitch": 0.8
+                        },
+                        {
+                            "type": "origins:trigger_cooldown",
+                            "power": "*:*_flap-cooldown"
+                        }
+                    ]
+                }
+            },
+            "else_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "*:*_launch-cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "y": 2.5,
+                            "client": false,
+                            "set": false
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.ender_dragon.flap",
+                            "volume": 1.0,
+                            "pitch": 1.0
+                        },
+                        {
+                            "type": "origins:trigger_cooldown",
+                            "power": "*:*_launch-cooldown"
+                        }
+                    ]
+                }
+            }
+        },
+        "cooldown": 1,
+        "key": "key.origins.primary_active"
+    }
+}
