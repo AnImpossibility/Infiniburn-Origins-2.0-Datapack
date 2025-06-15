@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_break_speed",
+    "name": "Excavator",
+    "description": "You mine significantly faster than others.",
+    "modifier": {
+        "name": "Construct - Excavator",
+        "operation": "multiply_total_multiplicative",
+        "value": 0.6
+    }
+}

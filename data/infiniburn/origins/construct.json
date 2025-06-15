@@ -5,6 +5,7 @@
     "impact": 2,
     "order": 4,
     "powers": [
-        "*:construct/storage"
+        "*:construct/storage",
+        "*:construct/excavator"
     ]
 }
