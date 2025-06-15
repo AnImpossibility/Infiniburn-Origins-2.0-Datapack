@@ -3,9 +3,9 @@
     "description": "Even without wearing armor, your skin provides natural protection.",
     "type": "origins:attribute",
     "modifier": {
+        "name": "Shulk - Sturdy Skin",
         "attribute": "minecraft:generic.armor",
         "operation": "addition",
-        "value": 8.0,
-        "name": "Shulk - Sturdy Skin"
+        "value": 8.0
     }
 }

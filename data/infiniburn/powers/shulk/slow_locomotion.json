@@ -5,16 +5,17 @@
     "land": {
         "type": "origins:attribute",
         "modifier":  {
+            "name": "Shulk - Slow Locomotion",
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": -0.15,
-            "name": "Shulk - Slow Locomotion"
+            "value": -0.15
         },
         "update_health": false
     },
     "air": {
         "type": "origins:modify_air_speed",
         "modifier": {
+            "name": "Shulk - Slow Locomotion",
             "operation": "multiply_total_multiplicative",
             "value": -0.15
         }
