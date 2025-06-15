@@ -1,1 +1,0 @@
-{"infiniburn":{"enderian":{"$func":["tp_ready","start","load","finish"],"selection":{"$func":["too_far","spread_tester","spread_selector","prepare_spread","prepare_adjust","adjust_height"]},"raycast":{"$func":["start2","start","should_finish","loop2","loop","finish"],"should_finish":{"$func":["trapdoor_hell","stair_hell","snow_hell","slab_hell"]}}}}}
