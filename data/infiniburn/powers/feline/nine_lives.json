@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "name": "Nine Lives",
+    "description": "You have one less heart of health than humans.",
+    "modifier": {
+        "name": "Feline - Nine Lives",
+        "attribute": "minecraft:generic.max_health",
+        "value": -2.0,
+        "operation": "addition"
+    }
+}
