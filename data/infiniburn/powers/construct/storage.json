@@ -1,6 +1,6 @@
 {
     "name": "Storage",
-    "description": "You have access to an additional 9 slots of inventory. You keep the items in these slots when you die.",
+    "description": "You can access an additional nine inventory slots to keep items, even across death.",
     "type": "origins:inventory",
     "title": "Storage Compartment",
     "container_type": "dropper",

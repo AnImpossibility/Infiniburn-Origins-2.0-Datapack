@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Scared of Gourds",
-    "description": "You can't sense people wearing pumpkins unless eye contact is made or you hear them.",
+    "description": "You can't sense people wearing pumpkins unless eye contact is made, or you hear them.",
     "seen": {
         "type": "origins:entity_set"
     },

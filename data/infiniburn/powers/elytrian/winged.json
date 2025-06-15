@@ -2,6 +2,13 @@
     "type": "origins:multiple",
     "name": "Winged",
     "description": "You have wings that you let you fly, and that you can flap or launch into the sky with.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "Based on OriginsTweaks by Chromex_"
+        }
+    ],
     "wings": {
         "type": "origins:elytra_flight",
         "render_elytra": true
