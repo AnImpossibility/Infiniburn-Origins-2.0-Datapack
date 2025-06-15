@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "name": "Fragile",
+    "description": "You have three less hearts of health than humans.",
+    "modifier": {
+        "name": "Arachnid - Fragile",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -6.0
+    }
+}
