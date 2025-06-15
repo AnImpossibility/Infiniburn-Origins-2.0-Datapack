@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_taken",
+    "name": "Flammable",
+    "description": "You take more fire and lava damage.",
+    "damage_condition": {
+        "type": "origins:type",
+        "damage_type": "minecraft:is_fire"
+    },
+    "modifier": {
+        "name": "Overgrowth - Flammable",
+        "operation": "multiply_total_multiplicative",
+        "value": 0.66
+    }
+}
